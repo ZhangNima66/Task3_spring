@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 全局setting配置，根据需要 -->
+    <!--<settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>-->
+    <!-- 批量配置别名 -->
+    <typeAliases>
+        <package name="cn.com.hnisi.domain" />
+    </typeAliases>
+
+    <!-- 使用自动扫描器，扫描目标包下所有mapper -->
+    <!-- 被spring整合并进行mapper扫描，所以这里不需要配置 -->
+    <!-- <mappers>
+        <package name="cn.com.hnisi.mapper" />
+    </mappers> -->
+
+</configuration>
